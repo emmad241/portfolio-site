@@ -1,0 +1,173 @@
+html{
+    scroll-behavior: smooth;
+    transition-duration: 2000;
+}
+
+body{
+    background:rgba(13, 13, 13, 0.963);
+    font-family: 'Montserrat', sans-serif;
+    margin:0;
+}
+
+h1{
+    color:#ff99bb;
+    padding-bottom:40px;
+}
+
+a, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+hr{
+    border: none;
+    border-top: 1px dashed #909091;
+    border-width:2px;
+    height:1px;
+    width:50%;
+    margin: 30px auto;
+}
+
+.header{
+    background:rgb(13, 13, 13);
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+    height:50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    position:sticky;
+    top:0;
+    padding:32px 16px;
+    vertical-align: middle;
+}
+
+.header-logo{
+    color:rgba(208, 206, 206, 0.878) !important;
+    margin: 0px 50px;
+    font-size: 24px;
+    transition-duration: .4s;
+    text-decoration: none;
+}
+
+.header-logo:hover{
+    color:white !important;
+}
+
+.navbar{
+   margin: 0px 50px;
+   text-align:center;
+}
+
+.navbar__links{
+    list-style-type: none;
+    margin: 0;
+    padding:0;
+}
+
+.navbar__link{
+    display:inline-block;
+    color:rgba(208, 206, 206, 0.878);
+    margin: 0 20px;
+    transition-duration: .4s;
+}
+
+.navbar__link:hover{
+    color:white;
+}
+
+.main-heading{
+    color:white;
+    text-align: center;
+    margin-top:50px;
+    margin-bottom:0px;
+    padding-bottom:0;
+}
+
+#bio{
+    color:white;
+    text-align: center;
+    margin: 0px auto;
+    padding:48px;
+    max-width:50%;
+}
+
+#skills{
+    color:white;
+    text-align: center;
+    margin: 0px auto;
+    padding:48px;
+    max-width:50%;
+}
+
+#projects{
+    color:white;
+    margin: 0px auto;
+    padding:48px;
+    max-width:50%;
+    text-align: center;
+}
+
+.projects__table{
+    margin-top:20px;
+}
+
+.projects__row{
+    transition-duration: .3s;
+    padding:10px 20px;
+    border-radius:10px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.projects__row:hover{
+    background:#87123b7f;
+}
+
+.projects__row:active{
+    background:#d71d5e7f;
+}
+
+.project-logo{
+    width:60px;
+    border-radius: 50%;
+    margin:20px;
+}
+
+.project-title{
+    width:200px;
+    margin:0px 20px;
+    text-align: center !important;
+}
+
+.project-description{
+    width:300px;
+}
+
+#contact{
+    color:white;
+    text-align: center;
+    margin: 0px auto;
+    padding:48px;
+    max-width:50%;
+}  
+
+#bio p,
+#skills p,
+#projects p,
+#contact p{
+    text-align: left;
+    line-height:30px;
+}
+
+.footer{
+    height:50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding:64px 16px;
+    padding-top:16px;
+    vertical-align: middle;
+}
