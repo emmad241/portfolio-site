@@ -1,10 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+*::-webkit-scrollbar { 
+    display: none; 
+}
+
+
 html{
     scroll-behavior: smooth;
     transition-duration: 2000;
 }
 
 body{
-    background:rgba(13, 13, 13, 0.963);
+    background:#010511;
     font-family: 'Montserrat', sans-serif;
     margin:0;
 }
@@ -29,8 +42,8 @@ hr{
 }
 
 .header{
-    background:rgb(13, 13, 13);
-    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+    background:#01030c94;
+    box-shadow: black;
     height:50px;
     display: flex;
     align-items: center;
@@ -40,9 +53,10 @@ hr{
     top:0;
     padding:32px 16px;
     vertical-align: middle;
+    z-index:1;
 }
 
-.header-logo{
+.header__logo{
     color:rgba(208, 206, 206, 0.878) !important;
     margin: 0px 50px;
     font-size: 24px;
@@ -50,12 +64,12 @@ hr{
     text-decoration: none;
 }
 
-.header-logo:hover{
+.header__logo:hover{
     color:white !important;
 }
 
 .navbar{
-   margin: 0px 50px;
+   margin: 0px 1rem;
    text-align:center;
 }
 
@@ -76,20 +90,118 @@ hr{
     color:white;
 }
 
-.main-heading{
+.intro{
+    min-height: 42.5rem; 
+    display:flex;
+    flex-direction: column;
+    justify-content: top;
+}
+
+.intro__heading{
+    color: #453f5f;
+    text-shadow:
+        /* White glow */
+        0 0 7px #453f5f,
+        0 0 10px #453f5f,
+        0 0 21px #453f5f,
+        /* Green glow */
+        0 0 42px #453f5f,
+        0 0 82px #453f5f,
+        0 0 92px #453f5f,
+        0 0 102px #453f5f,
+        0 0 151px #453f5f;
+    font-size: 4rem;
     color:white;
     text-align: center;
-    margin-top:50px;
+    margin-top:15rem;
     margin-bottom:0px;
     padding-bottom:0;
+    animation: fadeIn 1.5s ease-in-out;
+    animation: flicker 1.5s infinite;    
+}
+
+.intro__description{
+    text-align:center;
+    animation: fadeIn 1.5s ease-in-out;
+    color: #d7b9ff;
+}
+
+
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: .5;
+    }
+}
+
+@keyframes flicker {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+      text-shadow:
+        0 0 4px #453f5f,
+        0 0 11px #453f5f,
+        0 0 19px #453f5f,
+        0 0 40px #453f5f,
+        0 0 80px #453f5f,
+        0 0 90px #453f5f,
+        0 0 100px #453f5f,
+        0 0 150px #453f5f;
+    }
+    20%, 24%, 55% {       
+        text-shadow:
+            0 0 2px #453f5f,
+            0 0 5px #453f5f,
+            0 0 10px #453f5f,
+            0 0 20px #453f5f,
+            0 0 40px #453f5f,
+            0 0 45px #453f5f,
+            0 0 50px #453f5f,
+            0 0 75px #453f5f;
+    }
 }
 
 #bio{
     color:white;
     text-align: center;
-    margin: 0px auto;
-    padding:48px;
-    max-width:50%;
+    margin: 0rem auto;
+    padding:1rem;
+    max-width:100%;
+    min-height: 52rem;
+}
+
+.bio__container{
+    margin:auto;
+    width:50%;
+}
+
+.bio__text{
+    font-size:1.5rem;
+}
+
+#invisible-link--bio{
+    color:transparent;
+    position:absolute;
+    top:43rem;
+}
+
+.bio__heading{
+    margin-top:2rem;
+}
+
+.image--first{
+    /* Set a specific height */
+    min-height: 42.5rem; 
 }
 
 #skills{
@@ -98,6 +210,26 @@ hr{
     margin: 0px auto;
     padding:48px;
     max-width:50%;
+    min-height: 42.5rem;
+}
+
+.grid-list{
+    list-style: none;
+}
+
+.grid-list__row{
+    
+}
+
+.grid-list__item{
+    padding: 1rem;
+    vertical-align: middle;
+    display:inline-block;
+}
+
+.h-6{
+    width:2rem;
+    height:2rem;
 }
 
 #projects{
@@ -106,6 +238,7 @@ hr{
     padding:48px;
     max-width:50%;
     text-align: center;
+    min-height: 42.5rem;
 }
 
 .projects__table{
@@ -129,19 +262,19 @@ hr{
     background:#d71d5e7f;
 }
 
-.project-logo{
+.project__logo{
     width:60px;
     border-radius: 50%;
     margin:20px;
 }
 
-.project-title{
+.project__title{
     width:200px;
     margin:0px 20px;
     text-align: center !important;
 }
 
-.project-description{
+.project__description{
     width:300px;
 }
 
@@ -151,6 +284,7 @@ hr{
     margin: 0px auto;
     padding:48px;
     max-width:50%;
+    min-height: 42.5rem;
 }  
 
 #bio p,
