@@ -12,7 +12,7 @@
 
 
 html{
-    scroll-behavior: smooth;
+    scroll-behavior:smooth;
     transition-duration: 2000;
 }
 
@@ -24,7 +24,8 @@ body{
 
 h1{
     color:#ff99bb;
-    padding-bottom:40px;
+    padding-bottom:5rem;
+    font-size: 2rem;
 }
 
 a, a:visited, a:hover, a:active {
@@ -84,13 +85,14 @@ hr{
     color:rgba(208, 206, 206, 0.878);
     margin: 0 20px;
     transition-duration: .4s;
+    cursor: pointer;
 }
 
 .navbar__link:hover{
     color:white;
 }
 
-.intro{
+#intro{
     min-height: 42.5rem; 
     display:flex;
     flex-direction: column;
@@ -185,8 +187,14 @@ hr{
     width:50%;
 }
 
+#bio__img{
+    width:10rem;
+    border-radius: 50%;
+    margin-bottom:2rem;
+}
+
 .bio__text{
-    font-size:1.5rem;
+    font-size:1.2rem;
 }
 
 #invisible-link--bio{
@@ -206,46 +214,71 @@ hr{
 
 #skills{
     color:white;
+    padding:3rem;
     text-align: center;
     margin: 0px auto;
-    padding:48px;
-    max-width:50%;
-    min-height: 42.5rem;
+    max-width:100%;
+    min-height: 52rem;
 }
 
-.grid-list{
-    list-style: none;
+.skills__container{
+    width:100%;
+    display:flex;
+    justify-content: space-around;
 }
 
-.grid-list__row{
-    
+.skills__section{
+    display:flex;
+    flex-direction: column;
 }
 
-.grid-list__item{
-    padding: 1rem;
-    vertical-align: middle;
-    display:inline-block;
+.skills__subheading{
+    margin-bottom:2rem;
 }
 
-.h-6{
-    width:2rem;
-    height:2rem;
+.skill{
+    width:4rem;
+    border-radius: 4px;
+    margin:1rem;
 }
 
 #projects{
     color:white;
     margin: 0px auto;
-    padding:48px;
+    padding:3rem;
     max-width:50%;
     text-align: center;
-    min-height: 42.5rem;
+    min-height: 52rem;
 }
 
 .projects__table{
-    margin-top:20px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;    
 }
 
 .projects__row{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.project:hover{
+    background:#be8dff62;
+}
+
+.project:active{
+    background:#be8dffaf;
+}
+
+.project{
+    height:20rem;
+    margin:1rem;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
     transition-duration: .3s;
     padding:10px 20px;
     border-radius:10px;
@@ -254,12 +287,11 @@ hr{
     justify-content: space-between;
 }
 
-.projects__row:hover{
-    background:#87123b7f;
-}
-
-.projects__row:active{
-    background:#d71d5e7f;
+.project--center{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;   
 }
 
 .project__logo{
@@ -269,8 +301,8 @@ hr{
 }
 
 .project__title{
-    width:200px;
-    margin:0px 20px;
+    width:100%;
+    margin:2rem;
     text-align: center !important;
 }
 
@@ -282,9 +314,14 @@ hr{
     color:white;
     text-align: center;
     margin: 0px auto;
-    padding:48px;
+    padding:3rem;
     max-width:50%;
-    min-height: 42.5rem;
+    min-height: 45rem;
+    display:flex;
+    flex-direction:column;
+    justify-content: content;
+    align-items: center;    
+    gap:3rem;
 }  
 
 #bio p,
@@ -295,8 +332,14 @@ hr{
     line-height:30px;
 }
 
+
+#email__button{
+    padding:1rem;
+    border:2px solid white;
+}
+
 .footer{
-    height:50px;
+    height:4rem;
     display: flex;
     align-items: center;
     justify-content: center;
