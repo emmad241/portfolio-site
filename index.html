@@ -45,12 +45,12 @@
 		<div id="invisible-link--bio">Bio</div>
 		<section id="bio">
 			<div class="bio__container">
-				<h1 class="bio__heading">BIO</h1>
+				<h1 class=" section__heading bio__heading">BIO</h1>
 				<img id="bio__img" src="images/guitar.png">
 				<p class="bio__text">
-					Hi! I'm Emma.
-					I'm a 22 year old software developer living in Ireland with a particular interest in web development and design. <br/>
-					I am currently studying for a degree in Software Development and really enjoying it. <br />
+					&emsp;Hi! I'm Emma.
+					I'm a 22 year old software developer living<br/> in Ireland with a particular interest in web development and design. <br/>
+					I am currently studying for a degree in Software Development at Munster Technological University and really enjoying it. <br />
 					I hope to continue to expand my technological knowledge and become a better developer as I pursue a career in software development 
 					and continue to create clean quality code.<br/><br/>
 					When I'm not programming, I enjoy playing piano and guitar, reading, and rock climbing.
@@ -59,7 +59,9 @@
 		</section>
 		<div id="invisible-link--skills">Skills</div>
 		<section id="skills">
-			<h1>SKILLS</h1>
+			<h1 id="skills__heading" class="section__heading">SKILLS</h1>
+			<p class="skills__description">I've been learning programming since September 2021 but my passion <br/> for it has quickly grown in the past few months, particularly for web development.<br/>
+			I'm excited to continue on my learning journey.</p>
 			<div class="skills__container">
 				<div class="skills__section">
 					<h2 class="skills__subheading">Tech I'm familiar with:</h2>
@@ -77,19 +79,25 @@
 					</div>
 					<div class="skills_row">
 						<img class="skill" src="images/skills/discord.png">
+						<img class="skill" src="images/skills/sqlite.png">
+						<img class="skill" src="images/skills/git.png">
+						<img class="skill" src="images/skills/github.png">
 					</div>
 				</div>
 				<div class="skills__section">
 					<h2 class="skills__subheading">What I'm learning at the moment:</h2>
 					<div class="skills__row">
 						<img class="skill" src="images/skills/react.png">
+						<img class="skill" src="images/skills/mongo.png">
+						<img class="skill" src="images/skills/css.png">
+						<img class="skill" src="images/skills/js.png">
 					</div>
 				</div>
 			</div>
 		</section>
 		<div id="invisible-link--projects">Projects</div>
 		<section id="projects">
-			<h1>PROJECTS</h1>
+			<h1 class="section__heading">PROJECTS</h1>
 			<div class="projects__table">
 				<div class="projects__row">
 					<div class="project">
@@ -120,12 +128,23 @@
 						</a>
 					</div>
 				</div>
+				<div class="projects__row">
+					<div class="project">
+						<a class="project--center" href="https://emmad241.github.io/breathe/">
+								<img src="images/spa.ico" class="project__logo" />
+								<h2 class="project__title">Breathe</h2>
+								<p class="project__description">
+									Mental health website for calming down
+								</p>
+						</a>
+					</div>
+				</div>
 			</div>
 		</section>
 		<section id="intro" data-parallax="scroll" data-image-src="images/cat.jpg"></section>
 		<div id="invisible-link--contact">Contact</div>
 		<section id="contact">
-			<h1>CONTACT</h1
+			<h1 class="section__heading">CONTACT</h1
 			<div class="contact__container">
 				<div><i id="email__icon" class="fa fa-envelope fa-5x" aria-hidden="true"></i></div>
 				<h2>Want to chat?</h2>
