@@ -374,3 +374,54 @@ hr{
     padding-top:16px;
     vertical-align: middle;
 }
+
+@media (max-width:40rem){
+    .parallax-mirror{
+        max-height: 20rem;
+    }
+
+    .header__logo{
+        margin:0;
+    }
+
+    .navbar__links{
+        display:flex;
+    }
+
+    .intro{
+        height: 20%;
+        max-height: 20rem;
+        min-height: 20rem;
+    }
+
+    .intro__heading{
+        font-size: 3rem;
+        margin-top:70%;
+    }
+
+    .intro__description{
+        font-size: 1.5rem;
+    }
+
+    .bio__container{
+        width:100%;
+    }
+
+    #skills{
+        padding-left:0;
+        padding-right:0;
+    }
+
+    .skills__container{
+        flex-direction: column;
+        width:100%;
+    }
+
+    .skills__section{
+        width:100%;
+    }
+
+    .skill{
+        width:3rem;
+    }
+}
