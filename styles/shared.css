@@ -226,16 +226,12 @@ hr{
 
 #skills{
     color:rgb(83, 83, 83);
-    background:#d7dad8;
+    background:#010511;
     padding:3rem;
     text-align: center;
     margin: 0px auto;
     max-width:100%;
     min-height: 46rem;
-}
-
-#skills__heading{
-    color:#062C3A;
 }
 
 .skills__container{
@@ -247,7 +243,7 @@ hr{
 .skills__description{
     text-align: center;
     margin-bottom: 3rem;
-    color:#062C3A;
+    color:white;
 }
 
 .skills__section{
@@ -257,7 +253,7 @@ hr{
 
 .skills__subheading{
     margin-bottom:2rem;
-    color:#062C3A;
+    color:#ff99bb;
 }
 
 .skill{
